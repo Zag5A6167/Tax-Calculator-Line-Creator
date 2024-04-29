@@ -1,5 +1,5 @@
 <h1>Tax calculator for line creator</h1>
-<h1>JPY to THB</h1>
+<h1>JPY to THB  20.42% or 15% tax</h1>
 
 
 
