@@ -1,7 +1,9 @@
 <h1>Tax calculator for line creator</h1>
 <h1>JPY to THB</h1>
-![22](https://github.com/za12ew44zz/Tax-Calculator-Line-Creator/assets/85066044/797e416c-5ff0-48c8-9609-5c510955b250)
 
+
+
+![22](https://github.com/za12ew44zz/Tax-Calculator-Line-Creator/assets/85066044/2622c810-1ec6-40c2-9041-cf8c45c88096)
 
 
 
