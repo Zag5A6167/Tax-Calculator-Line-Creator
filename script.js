@@ -23,18 +23,23 @@ fetch(`https://${host}/latest?amount=1&from=JPY&to=THB`)
             const discountPrice = calculated - discountAmount
             output.innerHTML = discountPrice.toFixed(3) +" "+"฿" + "<br>" + "≈"
             getValue = parseFloat(output.innerHTML)
+        }
+       if(tax.value == 2){
+        calculated = thbCurrency * parseFloat(jpyInput.value)
             
-        // // 15%
-         }else{
-            calculated = thbCurrency * parseFloat(jpyInput.value)
-            
-            const discountAmount = calculated * (20.42/100)
-            const discountPrice = calculated - discountAmount
-           
-            output.innerHTML = discountPrice.toFixed(3) +" "+"฿" + "<br>" + "≈"
-            getValue = parseFloat(output.innerHTML)
-            
-         }
+        const discountAmount = calculated * (15/100)
+        const discountPrice = calculated - discountAmount
+       
+        output.innerHTML = discountPrice.toFixed(3) +" "+"฿" + "<br>" + "≈"
+        getValue = parseFloat(output.innerHTML)
+       }
+       if(tax.value == 3){
+        
+        calculated = thbCurrency * parseFloat(jpyInput.value)
+        output.innerHTML = calculated.toFixed(3) +" "+"฿" + "<br>" + "≈"
+        getValue = parseFloat(output.innerHTML)
+       }
+       
 
 
         fetch(`https://${host}/latest?amount=${getValue}&from=THB&to=JPY`)
